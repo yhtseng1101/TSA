@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Raleway:400,900&display=swap" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"><img src="image/logo.png" height="30" widt="30" alt="TSA Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse CourgetteText" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link inactive" href="livingguide.html" inactive>Living Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="studentgroups.html">Student Groups</a>
+                </li>
+            </ul>
+
+            <!-- modal button -->
+            <div class="align-self-right">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#joinUsModal">
+                    Join Us
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- modal: join us-->
+    <div class="modal fade" id="joinUsModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header CourgetteText">
+                    <h5 class="modal-title">Join Us</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body RalewayText">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row form-group">                                   
+                                <label class="col-12 col-form-label">Tell us about yourself:</label>
+                                <div class="col-12 form-group">
+                                    <label class="sr-only" for="chFullName">Chinese name</label>
+                                    <input type="text" id="chFullName" class="form-control" placeholder="Your Name in Chinese" name="chFullName">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label class="sr-only" for="enFirstName">First name in English</label>
+                                    <input type="text" id="enFirstName" class="form-control" placeholder="Your First Name" name="enFirstName">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <label class="sr-only" for="enLastName">Last name in English</label>
+                                    <input type="text" id="enLastName" class="form-control" placeholder="Your Last Name" name="enLastName">
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label class="sr-only" for="enFirstName">Preferred name</label>
+                                    <input type="text" id="preferredName" class="form-control" placeholder="What do you want us to call you?" name="chFullName">
+                                </div>
+                            </div>
+                            <div class="row from-group">
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer RalewayText">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- modal: Sign In-->
+    <div class="modal fade" id="signInModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header CourgetteText ">
+                    <h5 class="modal-title">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body RalewayText">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row form-group">  
+                                <label for="UTDemail"></label>
+                                <input type="email" class="form-control" placeholder="UTD email" id="UTDemail">
+                            </div>
+                            <div class="row form-group">  
+                                <label for="password"></label>
+                                <input type="password" class="form-control" placeholder="password" id="password">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jumbotron -->   
+    <div class="jumbotron jumbotron-fluid" id="indexJumbotron">
+        <div class="jumbotronShade">
+        <div class="container align-self-right">
+            <h1 class="display-6 CourgetteText jumbotronHead">Welcome to the </h4> 
+            <h1 class="display-4 CourgetteText jumbotronHead">Taiwanese Student Association at UT Dallas</h1>
+            <hr class="jumbotronContent">
+            <p class="RalewayText jumbotronContent">Taiwanese Student Association at UT Dallas ("UTD TSA") is an organization formed by a group of students voluntarily devoting to provide Taiwanese students resources of networking, career path consultation, and information to get around the campus and in the Dallas area. </p>
+            <a class="btn btn-primary btn-lg RalewayText" href="#info" role="button">Learn more</a>
+            </p>
+        </div>
+        </div>
+    </div>
+</header>
+
+<!-- page content -->
+<div class="container mx-auto">
+    <div class="row">
+        <div class="col">
+            <h4 class="CourgetteText">Words from the President:</h4>
+                <p class="RalewayText">Fluke barque man-of-war topmast to go on account gangplank cutlass interloper overhaul lugger. Hail-shot no prey, no pay measured fer yer chains log take a caulk American Main marooned case shot bilge rat pillage. Ballast coffer long boat yardarm rigging keelhaul pink galleon hearties mutiny. </p>
+
+                <p class="RalewayText">Scallywag marooned dance the hempen jig Letter of Marque main sheet holystone strike colors crow's nest walk the plank hail-shot. Fire in the hole Pieces of Eight knave bucko landlubber or just lubber rutters bring a spring upon her cable grog yo-ho-ho gunwalls. Aft marooned Sea Legs schooner topsail draught walk the plank pirate starboard hempen halter.
+                </p>
+            
+        </div>  
+    </div>
+    <hr>
+    <div class="row text-center" id="info">
+        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
+            <div><i class="far fa-calendar-alt"></i></div>   
+            <h4 class="CourgetteText mt-3">Upcoming Events</h4>
+            <p>Events in sports, career, and annual gathering</p>
+            <a href="events.html" class="btn btn-primary">View Details >></a>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
+            <div><i class="fas fa-utensils"></i></div>
+            <h4 class="CourgetteText mt-3">Living Guide</h4>
+            <p>Foods, auto mobile repair, and entertaiments</p>
+            <a href="livingguide.html" class="btn btn-primary">View Details >></a>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
+            <div><i class="fas fa-users"></i></div>
+            <h4 class="CourgetteText mt-3">Student Groups</h4>
+            <p>Connect with sports & academic groups in TSA</p>
+            <a href="studentgroups.html" class="btn btn-primary">View Details >></a>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-5 RalewayText">
+                <h5 class="CourgetteText">Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="livingguide.html">Living Guide</a></li>
+                    <li><a href="studentgroups.html">Student Groups</a></li>
+                </ul>
+            </div>
+            <div class="col-5 offset-2">
+                <h5 class="CourgetteText">Reach out to Us</h5>
+                <a href="https://www.facebook.com/groups/UTDTSA/" target="_blank"><i class="fab fa-facebook-square" id="facebook"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="RalewayText" id="photoCredit">Photo by Glen Carrie on Unsplash</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
