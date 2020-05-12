@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags always come first -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,12 +15,12 @@
 
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>YHT Student Group</title>
+    <title>Events</title>
 </head>
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#"><img src="image/logo.png" height="30" widt="30" alt="TSA Logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="image/logo.png" height="30" widt="30" alt="YHT Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,10 +28,10 @@
         <div class="collapse navbar-collapse CourgetteText" id="navbarContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">About</a>
+                    <a class="nav-link" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="events.html">Events</a>
+                    <a class="nav-link active" href="#">Events</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link inactive" href="livingguide.html" inactive>Living Guide</a>
@@ -135,55 +136,69 @@
         </div>
     </div>
 
-    <!-- jumbotron -->   
-    <div class="jumbotron jumbotron-fluid" id="indexJumbotron">
-        <div class="jumbotronShade">
-        <div class="container align-self-right">
-            <h1 class="display-6 CourgetteText jumbotronHead">Welcome to the </h4> 
-            <h1 class="display-4 CourgetteText jumbotronHead">YHT Student Association</h1>
-            <hr class="jumbotronContent">
-            <p class="RalewayText jumbotronContent">YHT Student Association is a fictional organization which is to mimic the student association "TSA" which I was a member of. TSA was menat to help the students who came from Taiwan to the US to study to quickly blend into the culture and establish their livings. </p>
-            <a class="btn btn-primary btn-lg RalewayText" href="#info" role="button">Learn more</a>
-            </p>
-        </div>
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid" id="eventsJumbotron">
+        <div class="container">
+            <h1 class="display-4 CourgetteText jumbotronHead">Events</h1>
+            <p class="lead RalewayText jumbotronContent">Attend events and get connected with other students. </p>
         </div>
     </div>
 
-<!-- page content -->
-<div class="container mx-auto">
-    <div class="row">
-        <div class="col">
-            <h4 class="CourgetteText">Words from the President: </h4>
-                <p class="RalewayText">Goal of the website is to establish a way to transplant the information TSA have been sharing to the students from various source (facebook pages, booklets, etc.) to a website, so the information is easir to maintain and distributed to the students.  </p>
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="CourgetteText">Upcoming Events</h4>
+                <div class="row eventrows mt-3">
+                    <div class="col-md-8">
+                        <h5 class="CourgetteText mt-2">Welcome Party</h5>
+                        <p class="RalewayText">Come meet you future friends at the school.</p>
+                        <p class="RalewayText">Date: August 25 <br />
+                            Location: Activity Center</p>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary btn-sm" type="button">
+                            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDgyaWhsN2ZkZGpvb241NjJsMmVucG9vNzUgZjRqbW9vamRlMW8yMHNqcDVha25ibXM1cDRAZw&amp;tmsrc=f4jmoojde1o20sjp5aknbms5p4%40group.calendar.google.com"></a>
+                            Add to Your Calender
+                        </button>
+                    </div>
+                </div>
+                <div class="row eventrows mt-3">
+                    <div class="col-md-8">
+                        <h5 class="CourgetteText mt-2">Moon Festival BBQ</h5>
+                        <p class="RalewayText">Let's have BBQ to celebrate the Moon Festival.</p>
+                        <p class="RalewayText">Date: September 25 <br />
+                            Location: Riverside Park</p>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary btn-sm btn-sm" type="button">
+                            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDgyaWhsN2ZkZGpvb241NjJsMmVucG9vNzUgZjRqbW9vamRlMW8yMHNqcDVha25ibXM1cDRAZw&amp;tmsrc=f4jmoojde1o20sjp5aknbms5p4%40group.calendar.google.com"></a>
+                            Add to Your Calender
+                        </button>
+                    </div>
+                </div>
+                <div class="row eventrows mt-3">
+                    <div class="col-md-8">
+                        <h5 class="CourgetteText mt-2">Year End Party</h5>
+                        <p class="RalewayText">Bring your friends and come celebrate the year with us.</p>
+                        <p class="RalewayText">Date: December 31 <br />
+                            Location: My House</p>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary btn-sm" type="button">
+                            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDgyaWhsN2ZkZGpvb241NjJsMmVucG9vNzUgZjRqbW9vamRlMW8yMHNqcDVha25ibXM1cDRAZw&amp;tmsrc=f4jmoojde1o20sjp5aknbms5p4%40group.calendar.google.com"></a>
+                            Add to Your Calender
+                        </button>
+                    </div>
+                </div>
 
-                <p class="RalewayText">If you belong to a student organization and like to use this website for your organization, I would love to work with you. You can contact me <a href="">here</a>. 
-                </p>
-            
-        </div>  
-    </div>
-    <hr>
-    <div class="row text-center" id="info">
-        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
-            <div><i class="far fa-calendar-alt"></i></div>   
-            <h4 class="CourgetteText mt-3">Upcoming Events</h4>
-            <p>Events in sports, career, and annual gathering</p>
-            <a href="events.html" class="btn btn-primary">View Details >></a>
-        </div>
-        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
-            <div><i class="fas fa-utensils"></i></div>
-            <h4 class="CourgetteText mt-3">Living Guide</h4>
-            <p>Foods, auto mobile repair, and entertaiments</p>
-            <a href="livingguide.html" class="btn btn-primary">View Details >></a>
-        </div>
-        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
-            <div><i class="fas fa-users"></i></div>
-            <h4 class="CourgetteText mt-3">Student Groups</h4>
-            <p>Connect with sports & academic groups in TSA</p>
-            <a href="studentgroups.html" class="btn btn-primary">View Details >></a>
+            </div>
+            <div class="col-md-6">
+                <iframe class="embed-responsive embed-responsive-item" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZjRqbW9vamRlMW8yMHNqcDVha25ibXM1cDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F09300&amp;showPrint=0&amp;showCalendars=0&amp;showNav=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
         </div>
     </div>
-</div>
-
+    
 <!-- footer -->
 <footer class="site-footer">
     <div class="container">
@@ -191,8 +206,8 @@
             <div class="col-5 RalewayText">
                 <h5 class="CourgetteText">Links</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">About</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="#">Events</a></li>
                     <li><a href="livingguide.html">Living Guide</a></li>
                     <li><a href="studentgroups.html">Student Groups</a></li>
                 </ul>
@@ -204,7 +219,6 @@
             </div>
         </div>
     </div>
-    <p class="RalewayText" id="photoCredit">Photo by Glen Carrie on Unsplash</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

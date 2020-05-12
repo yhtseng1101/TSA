@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags always come first -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,13 +14,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Raleway:400,900&display=swap" />
 
     <link rel="stylesheet" href="css/styles.css" />
+        
+    <title>Living Guide</title>
 
-    <title>YHT Student Group</title>
 </head>
+
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#"><img src="image/logo.png" height="30" widt="30" alt="TSA Logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="image/logo.png" height="30" widt="30" alt="TSA Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,13 +30,13 @@
         <div class="collapse navbar-collapse CourgetteText" id="navbarContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">About</a>
+                    <a class="nav-link" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="events.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link inactive" href="livingguide.html" inactive>Living Guide</a>
+                    <a class="nav-link active" href="#" inactive>Living Guide</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="studentgroups.html">Student Groups</a>
@@ -135,55 +138,38 @@
         </div>
     </div>
 
-    <!-- jumbotron -->   
-    <div class="jumbotron jumbotron-fluid" id="indexJumbotron">
-        <div class="jumbotronShade">
-        <div class="container align-self-right">
-            <h1 class="display-6 CourgetteText jumbotronHead">Welcome to the </h4> 
-            <h1 class="display-4 CourgetteText jumbotronHead">YHT Student Association</h1>
-            <hr class="jumbotronContent">
-            <p class="RalewayText jumbotronContent">YHT Student Association is a fictional organization which is to mimic the student association "TSA" which I was a member of. TSA was menat to help the students who came from Taiwan to the US to study to quickly blend into the culture and establish their livings. </p>
-            <a class="btn btn-primary btn-lg RalewayText" href="#info" role="button">Learn more</a>
-            </p>
-        </div>
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid" id="livingGuideJumbotron">
+        <div class="container">
+            <h1 class="display-4 CourgetteText jumbotronHead">Living Guide</h1>
+            <p class="lead RalewayText jumbotronContent">Find the information you need to establish your living in the US. </p>
         </div>
     </div>
+   
 
-<!-- page content -->
-<div class="container mx-auto">
-    <div class="row">
-        <div class="col">
-            <h4 class="CourgetteText">Words from the President: </h4>
-                <p class="RalewayText">Goal of the website is to establish a way to transplant the information TSA have been sharing to the students from various source (facebook pages, booklets, etc.) to a website, so the information is easir to maintain and distributed to the students.  </p>
-
-                <p class="RalewayText">If you belong to a student organization and like to use this website for your organization, I would love to work with you. You can contact me <a href="">here</a>. 
-                </p>
+<!-- pills -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-bank-tab" data-toggle="pill" href="#v-pills-bank" role="tab" aria-controls="v-pills-bank" aria-selected="true">Open Bank Account</a>
+                    <a class="nav-link" id="v-pills-market-tab" data-toggle="pill" href="#v-pills-market" role="tab" aria-controls="v-pills-market" aria-selected="false">Markets Nearby</a>
+                    <a class="nav-link" id="v-pills-insurance-tab" data-toggle="pill" href="#v-pills-insurance" role="tab" aria-controls="v-pills-insurance" aria-selected="false">Insurance</a>
+                    <a class="nav-link" id="v-pills-car-tab" data-toggle="pill" href="#v-pills-car" role="tab" aria-controls="v-pills-car" aria-selected="false">Purchase a Car</a>
+                </div>
+            </div>
+                <div class="col">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-bank" role="tabpanel" aria-labelledby="v-pills-bank-tab">Info of BOA & Chase</div>
+                        <div class="tab-pane fade" id="v-pills-market" role="tabpanel" aria-labelledby="v-pills-market-tab">Find the markets near you</div>
+                        <div class="tab-pane fade" id="v-pills-insurance" role="tabpanel" aria-labelledby="v-pills-insurance-tab">Who to purchase your insurance with</div>
+                        <div class="tab-pane fade" id="v-pills-car" role="tabpanel" aria-labelledby="v-pills-car-tab">Where to purchase your car</div>
+                    </div>
+                </div>
             
-        </div>  
-    </div>
-    <hr>
-    <div class="row text-center" id="info">
-        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
-            <div><i class="far fa-calendar-alt"></i></div>   
-            <h4 class="CourgetteText mt-3">Upcoming Events</h4>
-            <p>Events in sports, career, and annual gathering</p>
-            <a href="events.html" class="btn btn-primary">View Details >></a>
-        </div>
-        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
-            <div><i class="fas fa-utensils"></i></div>
-            <h4 class="CourgetteText mt-3">Living Guide</h4>
-            <p>Foods, auto mobile repair, and entertaiments</p>
-            <a href="livingguide.html" class="btn btn-primary">View Details >></a>
-        </div>
-        <div class="col-sm-12 col-md-4 mt-4 RalewayText">
-            <div><i class="fas fa-users"></i></div>
-            <h4 class="CourgetteText mt-3">Student Groups</h4>
-            <p>Connect with sports & academic groups in TSA</p>
-            <a href="studentgroups.html" class="btn btn-primary">View Details >></a>
         </div>
     </div>
-</div>
-
+    
 <!-- footer -->
 <footer class="site-footer">
     <div class="container">
@@ -191,9 +177,9 @@
             <div class="col-5 RalewayText">
                 <h5 class="CourgetteText">Links</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">About</a></li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="livingguide.html">Living Guide</a></li>
+                    <li><a href="#">Living Guide</a></li>
                     <li><a href="studentgroups.html">Student Groups</a></li>
                 </ul>
             </div>
@@ -204,7 +190,6 @@
             </div>
         </div>
     </div>
-    <p class="RalewayText" id="photoCredit">Photo by Glen Carrie on Unsplash</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
