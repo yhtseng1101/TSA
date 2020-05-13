@@ -72,6 +72,11 @@ footer > div {
     font-size: 0.7em;
 }
 
+#contactModalHere {
+    color: #3B859F;
+    font-weight: bold;
+}
+
 /* events */
 
 #eventsJumbotron {
